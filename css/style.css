@@ -1,0 +1,254 @@
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.gradient-background {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 500% 500%;
+  animation: gradient-animation 15s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+.testimonial-img{
+  height: 180px;
+  border-radius: 50%;
+}
+
+.footer-color{
+  background-color: #e0e0e0;
+}
+
+.resume {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #333;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.summary{
+  border-top: 2px solid #333;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  color: #555;
+}
+
+header h6 {
+  color: #555;
+}
+
+.resume-section {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.resume-section h2 {
+  border-top: 2px solid #333;
+  padding-top: 10px;
+}
+
+.experience-item {
+  margin-bottom: 20px;
+}
+
+.experience-item h4 {
+  margin: 0;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-list li {
+  background-color: #eee;
+  padding: 8px 12px;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  #resume{
+      padding: 5px;  
+  }
+  .resume {
+      padding: 10px; /* Adjusted padding for smaller screens */
+  }
+
+  .header h1 {
+      font-size: 28px; /* Reduced font size for name */
+  }
+
+  .header p {
+      font-size: 16px; /* Reduced font size for job title */
+  }
+
+  .contact {
+      padding: 8px; /* Adjusted padding for contact section */
+  }
+
+  .contact h2 {
+      font-size: 20px; /* Reduced font size for contact heading */
+  }
+
+  .skills h2, .experience h2, .education h2, .summary h2 {
+      font-size: 20px; /* Reduced font size for section headings */
+  }
+
+  .skills li, .experience li {
+      margin-bottom: 8px; /* Adjusted margin for list items */
+  }
+
+  .skills li::before, .experience li::before {
+      font-size: 16px; /* Reduced font size for bullet points */
+  }
+
+  .education p, .summary p {
+      font-size: 16px; /* Reduced font size for content */
+  }
+
+  .text-center {
+    padding: 5px;
+  }
+}
+
+.resume-btn {
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: white;
+  padding: 8px 18px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Darker background on mouse-over */
+.resume-btn:hover {
+  background-color: #22A699;
+}
+
+.contact-form{
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Adjusted max-width */
+  width: 100%;
+  text-align: center;
+}
+
+.contact-image {
+  max-width: 100%;
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+.title-form {
+  color: #333333;
+  font-size: 30px; /* Slightly reduced font size */
+  margin-bottom: 20px; /* Reduced margin */
+  font-weight: bold;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 15px; /* Reduced margin */
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555555;
+  font-size: 16px; /* Adjusted font size */
+}
+
+input,
+textarea {
+  width: calc(100% - 20px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px; /* Adjusted font size */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: black;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px; /* Adjusted font size */
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #22A699;
+}
+
+#cover-container{
+  color: white;
+}
+
+.text-cover{
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: #fff; 
+    padding: 10px 20px; 
+    font-size: 20px; 
+    text-align: center;
+}
